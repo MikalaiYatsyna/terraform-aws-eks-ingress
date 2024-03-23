@@ -2,6 +2,7 @@
 Terraform module to install AWS and NGINX ingress controllers
 
 <!-- BEGIN_TF_DOCS -->
+  
 ## Requirements
 
 | Name | Version |
@@ -11,7 +12,6 @@ Terraform module to install AWS and NGINX ingress controllers
 | <a name="requirement_helm"></a> [helm](#requirement\_helm) | 2.12.1 |
 | <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) | 2.27.0 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | 3.6.0 |
-
 ## Providers
 
 | Name | Version |
@@ -20,13 +20,11 @@ Terraform module to install AWS and NGINX ingress controllers
 | <a name="provider_helm"></a> [helm](#provider\_helm) | 2.12.1 |
 | <a name="provider_kubernetes"></a> [kubernetes](#provider\_kubernetes) | 2.27.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.6.0 |
-
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_lb_role"></a> [lb\_role](#module\_lb\_role) | terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks | n/a |
-
 ## Resources
 
 | Name | Type |
@@ -40,7 +38,6 @@ Terraform module to install AWS and NGINX ingress controllers
 | [aws_eks_cluster_auth.eks_cluster_auth](https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/eks_cluster_auth) | data source |
 | [aws_lb.lb](https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/lb) | data source |
 | [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/region) | data source |
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -54,7 +51,6 @@ Terraform module to install AWS and NGINX ingress controllers
 | <a name="input_nginx_ingress_kind"></a> [nginx\_ingress\_kind](#input\_nginx\_ingress\_kind) | Kind of Nginx ingress controller | `string` | `"Deployment"` | no |
 | <a name="input_oidc_provider_arn"></a> [oidc\_provider\_arn](#input\_oidc\_provider\_arn) | OIDC provider arn | `string` | n/a | yes |
 | <a name="input_stack"></a> [stack](#input\_stack) | Stack name | `string` | `"dev"` | no |
-
 ## Outputs
 
 No outputs.
