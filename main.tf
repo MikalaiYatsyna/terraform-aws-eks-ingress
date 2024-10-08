@@ -37,7 +37,7 @@ resource "helm_release" "nginx_ingress_controller" {
   name              = "nginx-ingress-controller"
   repository        = "https://kubernetes.github.io/ingress-nginx"
   chart             = "ingress-nginx"
-  version           = "4.10.0"
+  version           = "4.11.3"
   namespace         = var.namespace
   atomic            = true
   dependency_update = true
