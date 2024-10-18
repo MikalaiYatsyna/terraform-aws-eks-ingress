@@ -13,7 +13,7 @@ resource "helm_release" "aws_lb_controller" {
   name              = "aws-load-balancer-controller"
   repository        = "https://aws.github.io/eks-charts"
   chart             = "aws-load-balancer-controller"
-  version           = "1.7.2"
+  version           = "1.9.2"
   namespace         = var.namespace
   atomic            = true
   dependency_update = true
